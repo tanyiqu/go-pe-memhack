@@ -93,7 +93,6 @@ BOOL CMemMiscPage1::OnInitDialog()
 	m_Static->SetFont(&m_Font);
 
 	OnChangeUILang();
-
 	return TRUE;  // return TRUE unless you set the focus to a control
 	// 异常: OCX 属性页应返回 FALSE
 }

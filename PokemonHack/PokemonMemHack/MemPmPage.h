@@ -56,4 +56,7 @@ protected:
 	afx_msg void OnBnClickedMoveUp();
 	afx_msg void OnBnClickedMoveDown();
 	DECLARE_MESSAGE_MAP()
+public:
+//	afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);
+//	afx_msg void OnInitMenu(CMenu* pMenu);
 };

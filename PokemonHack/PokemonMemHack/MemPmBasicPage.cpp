@@ -49,6 +49,8 @@ BEGIN_MESSAGE_MAP(CMemPmBasicPage, CMemPmTabPage)
 	ON_BN_CLICKED(IDC_OBEDIENCE, OnBnClickedObedience)
 	ON_STN_DBLCLK(IDC_CHAR_TITLE, OnStnDblclickCharTitle)
 	ON_STN_DBLCLK(IDC_ID_TITLE, OnStnDblclickIdTitle)
+	ON_WM_CREATE()
+	ON_WM_PAINT()
 END_MESSAGE_MAP()
 
 
@@ -58,7 +60,9 @@ BOOL CMemPmBasicPage::OnInitDialog()
 	CMemPmTabPage::OnInitDialog();
 
 	m_ctrlBreedList.SetExtendedStyle(0, CBES_EX_NOSIZELIMIT);
+	//MessageBox(TEXT("确定新建任务吗？"), TEXT("新建任务"), MB_YESNO);
 
+	//((CButton*)GetDlgItem(IDC_LANG_CN))->SetCheck(1);
 	return TRUE;  // return TRUE unless you set the focus to a control
 	// 异常: OCX 属性页应返回 FALSE
 }
@@ -777,4 +781,27 @@ void CMemPmBasicPage::OnStnDblclickIdTitle()
 		szText.Format(_T("0x%08lX"), dwId);
 		SetDlgItemText(IDC_ID, szText);
 	}
+}
+
+
+int CMemPmBasicPage::OnCreate(LPCREATESTRUCT lpCreateStruct)
+{
+	if (CMemPmTabPage::OnCreate(lpCreateStruct) == -1)
+		return -1;
+
+	// TODO:  在此添加您专用的创建代码
+
+	return 0;
+}
+
+
+void CMemPmBasicPage::OnPaint()
+{
+	CPaintDC dc(this); // device context for painting
+	// TODO:  在此处添加消息处理程序代码
+	// 不为绘图消息调用 CMemPmTabPage::OnPaint()
+	//MessageBox(TEXT("确定新建任务吗？"), TEXT("新建任务"), MB_YESNO);
+
+
+	//((CButton*)GetDlgItem(IDC_LANG_CN))->SetCheck(1);
 }

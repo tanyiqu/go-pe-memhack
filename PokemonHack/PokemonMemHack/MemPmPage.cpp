@@ -3,6 +3,7 @@
 
 #include "stdafx.h"
 #include "PokemonMemHack.h"
+#include "MemPmPage.h"
 
 // CMemPmPage 对话框
 
@@ -56,6 +57,8 @@ BEGIN_MESSAGE_MAP(CMemPmPage, CPropertyPage)
 	ON_BN_CLICKED(IDC_COUNT_NONE, OnBnClickedCountNone)
 	ON_BN_CLICKED(IDC_MOVE_UP, OnBnClickedMoveUp)
 	ON_BN_CLICKED(IDC_MOVE_DOWN, OnBnClickedMoveDown)
+//	ON_WM_CREATE()
+//	ON_WM_INITMENU()
 END_MESSAGE_MAP()
 
 
@@ -107,7 +110,8 @@ BOOL CMemPmPage::OnInitDialog()
 	OnChangeUILang();
 
 	ShowTabPage(0);
-
+	// 默认显示中文
+	OnBnClickedLangCn();
 	return TRUE;  // return TRUE unless you set the focus to a control
 	// 异常: OCX 属性页应返回 FALSE
 }
@@ -398,3 +402,5 @@ void CMemPmPage::OnBnClickedMoveDown()
 		}
 	}
 }
+
+

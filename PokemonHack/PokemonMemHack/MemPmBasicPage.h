@@ -72,4 +72,7 @@ protected:
 	afx_msg void OnStnDblclickCharTitle();
 	afx_msg void OnStnDblclickIdTitle();
 	DECLARE_MESSAGE_MAP()
+public:
+	afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);
+	afx_msg void OnPaint();
 };
