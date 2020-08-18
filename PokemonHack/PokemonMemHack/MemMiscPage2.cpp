@@ -55,7 +55,7 @@ BOOL CMemMiscPage2::OnInitDialog()
 	DWORD	dwIndex;
 	CString	szText;
 
-	CheckDlgButton(IDC_PC_NAME_JP, BST_CHECKED);
+	CheckDlgButton(IDC_PC_NAME_EN, BST_CHECKED);
 	CheckDlgButton(IDC_PC_SEX_RANDOM, BST_CHECKED);
 
 	m_Font.CreateFont(
