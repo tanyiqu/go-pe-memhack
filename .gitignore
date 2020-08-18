@@ -35,3 +35,5 @@ Debug
 Backup
 *.sdf
 *.opensdf
+ipch
+*.ipch
