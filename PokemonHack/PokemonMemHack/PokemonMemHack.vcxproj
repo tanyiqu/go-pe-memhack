@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -7,10 +7,6 @@
     </ProjectConfiguration>
     <ProjectConfiguration Include="Release|Win32">
       <Configuration>Release</Configuration>
-      <Platform>Win32</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="Template|Win32">
-      <Configuration>Template</Configuration>
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
@@ -22,12 +18,14 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
     <UseOfMfc>Static</UseOfMfc>
     <CharacterSet>Unicode</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
     <UseOfMfc>Static</UseOfMfc>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -44,13 +42,17 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
-    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</IntDir>
-    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</IntDir>
-    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Debug\</OutDir>
+    <IntDir>Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Release\</OutDir>
+    <IntDir>Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Midl>
@@ -105,8 +107,7 @@ kernel32.lib advapi32.lib user32.lib gdi32.lib shell32.lib comdlg32.lib version.
       <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
-      <DebugInformationFormat>
-      </DebugInformationFormat>
+      <DebugInformationFormat />
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -168,25 +169,29 @@ kernel32.lib advapi32.lib user32.lib gdi32.lib shell32.lib comdlg32.lib version.
     <ClInclude Include="SkillListBox.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="res\mark0.bmp" />
-    <None Include="res\mark1.bmp" />
-    <None Include="res\mark2.bmp" />
-    <None Include="res\mark3.bmp" />
-    <None Include="res\nya.ico" />
-    <None Include="res\PokemonMemHack.rc2" />
-    <None Include="AreaNameList.txt" />
-    <None Include="BreedNameList.txt" />
-    <None Include="ItemDescList.txt" />
-    <None Include="ItemNameList.txt" />
-    <None Include="PersonalityList.txt" />
-    <None Include="SkillDescList.txt" />
-    <None Include="SkillNameList.txt" />
-    <None Include="SpecDescList.txt" />
-    <None Include="SpecNameList.txt" />
-    <None Include="使用帮助.txt" />
+    <Image Include="res\mark0.bmp" />
+    <Image Include="res\mark1.bmp" />
+    <Image Include="res\mark2.bmp" />
+    <Image Include="res\mark3.bmp" />
+    <Image Include="res\nya.ico" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="PokemonMemHack.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\PokemonMemHack.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="AreaNameList.txt" />
+    <Text Include="BreedNameList.txt" />
+    <Text Include="ItemDescList.txt" />
+    <Text Include="ItemNameList.txt" />
+    <Text Include="PersonalityList.txt" />
+    <Text Include="SkillDescList.txt" />
+    <Text Include="SkillNameList.txt" />
+    <Text Include="SpecDescList.txt" />
+    <Text Include="SpecNameList.txt" />
+    <Text Include="使用帮助.txt" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PokemonCodec\PokemonCodec.vcxproj">
