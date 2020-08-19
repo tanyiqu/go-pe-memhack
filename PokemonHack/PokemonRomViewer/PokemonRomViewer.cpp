@@ -80,7 +80,8 @@ WORD ConvertBreed(WORD wBreed, BOOL b387To412)
 	}
 	else		// from Rom space to PokemonStruct space
 	{
-		if(wCvt > 411)
+		if (wCvt > 411)
+		//if (wCvt > 800)
 			wCvt = 0;
 		else if(wCvt >= 277)
 			wCvt -= 25;
