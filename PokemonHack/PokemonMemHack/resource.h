@@ -212,6 +212,11 @@
 #define IDC_NO_NAME                     1900
 #define IDC_ENABLE_TEXT                 1901
 #define IDC_ALLPKMN                     1911
+#define IDC_MFCLINK1                    1912
+#define IDC_MFCLINK2                    1913
+#define IDC_MFCLINK3                    1914
+#define IDC_MFCLINK4                    1915
+#define IDC_MFCLINK5                    1916
 #define IDC_SECRET                      2490
 #define IDC_DECODE                      2491
 #define IDC_ENCODE                      2492
@@ -233,9 +238,9 @@
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        148
+#define _APS_NEXT_RESOURCE_VALUE        149
 #define _APS_NEXT_COMMAND_VALUE         32771
-#define _APS_NEXT_CONTROL_VALUE         1912
+#define _APS_NEXT_CONTROL_VALUE         1917
 #define _APS_NEXT_SYMED_VALUE           104
 #endif
 #endif
