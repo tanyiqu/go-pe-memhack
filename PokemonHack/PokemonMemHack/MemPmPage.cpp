@@ -156,6 +156,7 @@ void CMemPmPage::SetPmList(BOOL bSelectionOnly)
 		return;
 
 	lvi.iSubItem = 0;
+	
 	if(!bSelectionOnly)
 	{
 		lvi.mask = LVIF_IMAGE | LVIF_TEXT;
@@ -175,17 +176,28 @@ void CMemPmPage::SetPmList(BOOL bSelectionOnly)
 				wBreed = 0x114;
 
 			lvi.iItem = dwIndex;
+
+			/*
+			CString str; // 这是MFC中的字符串变量
+			str.Format(_T("%d"), wBreed);
+			MessageBox(str);
+			*/
 			lvi.iImage = g_MemRom.GetSmallIconIndex(wBreed, rand() % g_MemRom.GetSmallIconCount(wBreed));
+			
+			
 
 			szText.Format(_T("%lu"), dwIndex + 1);
 			lvi.pszText = szText.GetBuffer();
-			if(dwIndex < dwCount)
+			if (dwIndex < dwCount)
+				
 				m_ctrlPmList.SetItem(&lvi);
 			else
+				
 				m_ctrlPmList.InsertItem(&lvi);
 			szText.ReleaseBuffer();
 		}
 	}
+	
 	else if(m_dwCurPm < ACTIVE_POKEMON_COUNT)
 	{
 		lvi.mask = LVIF_IMAGE;
@@ -197,7 +209,7 @@ void CMemPmPage::SetPmList(BOOL bSelectionOnly)
 
 		m_ctrlPmList.SetItem(&lvi);
 	}
-
+	
 	if(m_dwCurPm >= ACTIVE_POKEMON_COUNT)
 		m_ctrlPmList.SetItemState(0, -1, LVIS_SELECTED | LVIS_FOCUSED);
 
