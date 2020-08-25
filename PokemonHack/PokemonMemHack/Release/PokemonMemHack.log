@@ -1,0 +1,39 @@
+﻿生成启动时间为 2020/8/25 13:10:19。
+     1>项目“E:\Code\CCode\.Project\GBALetsGoPE-MemHack\PokemonHack\PokemonMemHack\PokemonMemHack.vcxproj”在节点 2 上(Build 个目标)。
+     1>Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Release\PokemonMemHack.exe" /INCREMENTAL:NO /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"Release\PokemonMemHack.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"Release\PokemonMemHack.lib" /MACHINE:X86 /SAFESEH /nod:kernel32.lib /nod:advapi32.lib /nod:user32.lib /nod:gdi32.lib /nod:shell32.lib /nod:comdlg32.lib /nod:version.lib /nod:mpr.lib /nod:rasapi32.lib /nod:winmm.lib /nod:winspool.lib /nod:vfw32.lib /nod:secur32.lib /nod:oleacc.lib /nod:oledlg.lib /nod:sensapi.lib
+         UnicoWS.lib
+         kernel32.lib advapi32.lib user32.lib gdi32.lib shell32.lib comdlg32.lib version.lib mpr.lib rasapi32.lib winmm.lib winspool.lib vfw32.lib secur32.lib oleacc.lib oledlg.lib sensapi.lib Release\PokemonMemHack.res
+         Release\PokemonMemHack.obj
+         Release\PokemonMemHackCore.obj
+         Release\PokemonMemHackDlg.obj
+         Release\stdafx.obj
+         Release\StringReader.obj
+         Release\MemPmAbilityPage.obj
+         Release\MemPmBasicPage.obj
+         Release\MemPmMiscPage.obj
+         Release\MemPmPage.obj
+         Release\MemPmRibbonPage.obj
+         Release\MemPmSkillPage.obj
+         Release\MemPmTabPage.obj
+         Release\MemMiscPage0.obj
+         Release\MemMiscPage1.obj
+         Release\MemMiscPage2.obj
+         Release\SkillComboBox.obj
+         Release\SkillListBox.obj
+         "E:\Code\CCode\.Project\GBALetsGoPE-MemHack\PokemonHack\PokemonCodec\Release\PokemonCodec.lib"
+         "E:\Code\CCode\.Project\GBALetsGoPE-MemHack\PokemonHack\ProcessHandler\Release\ProcessHandler.lib"
+         "E:\Code\CCode\.Project\GBALetsGoPE-MemHack\PokemonHack\VisualBoyHandler\Release\VisualBoyHandler.lib"
+         "E:\Code\CCode\.Project\GBALetsGoPE-MemHack\PokemonHack\PokemonRom\Release\PokemonRom.lib"
+     1>LINK : warning LNK4098: 默认库“MSVCRT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+         正在生成代码
+         已完成代码的生成
+     1>MSVCRT.lib(MSVCR120.dll) : error LNK2005: _wcsncmp 已经在 libcmt.lib(wcsncmp.obj) 中定义
+     1>MSVCRT.lib(ti_inst.obj) : error LNK2005: "private: __thiscall type_info::type_info(class type_info const &)" (??0type_info@@AAE@ABV0@@Z) 已经在 libcmt.lib(typinfo.obj) 中定义
+     1>MSVCRT.lib(ti_inst.obj) : error LNK2005: "private: class type_info & __thiscall type_info::operator=(class type_info const &)" (??4type_info@@AAEAAV0@ABV0@@Z) 已经在 libcmt.lib(typinfo.obj) 中定义
+     1>Release\PokemonMemHack.exe : fatal error LNK1169: 找到一个或多个多重定义的符号
+     1>已完成生成项目“E:\Code\CCode\.Project\GBALetsGoPE-MemHack\PokemonHack\PokemonMemHack\PokemonMemHack.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:02.02

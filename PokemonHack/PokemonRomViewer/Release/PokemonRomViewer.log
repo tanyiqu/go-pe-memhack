@@ -1,0 +1,81 @@
+﻿生成启动时间为 2020/8/25 13:06:27。
+     1>项目“E:\Code\CCode\.Project\GBALetsGoPE-MemHack\PokemonHack\PokemonRomViewer\PokemonRomViewer.vcxproj”在节点 3 上(Rebuild 个目标)。
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\PokemonRom /nologo /W3 /WX- /O2 /Oy- /GL /D WIN32 /D _WINDOWS /D NDEBUG /D _VC80_UPGRADE=0x0710 /D _UNICODE /D UNICODE /GF- /Gm- /EHsc /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Release\PokemonRomViewer.pch" /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\PokemonRom /nologo /W3 /WX- /O2 /Oy- /GL /D WIN32 /D _WINDOWS /D NDEBUG /D _VC80_UPGRADE=0x0710 /D _UNICODE /D UNICODE /GF- /Gm- /EHsc /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Release\PokemonRomViewer.pch" /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt BaseDialog.cpp ChildView.cpp ConfigDlg.cpp MainFrm.cpp PokemonRomViewer.cpp StringReader.cpp WaitDlg.cpp BreedAblPage.cpp BreedDeriveLearnPage.cpp BreedDlg.cpp BreedItemPage.cpp BreedLvlupLearnPage.cpp BreedMachineLearnPage.cpp BreedSpecPage.cpp BreedTabPage.cpp BreedTypePage.cpp EvoDlg.cpp ItemDlg.cpp SkillDlg.cpp EncDlg.cpp EncFishPage.cpp EncLandPage.cpp EncStonePage.cpp EncTabPage.cpp EncWaterPage.cpp BerryDlg.cpp
+         BaseDialog.cpp
+         ChildView.cpp
+         ConfigDlg.cpp
+         MainFrm.cpp
+         PokemonRomViewer.cpp
+         StringReader.cpp
+         WaitDlg.cpp
+         BreedAblPage.cpp
+         BreedDeriveLearnPage.cpp
+         BreedDlg.cpp
+         BreedItemPage.cpp
+         BreedLvlupLearnPage.cpp
+         BreedMachineLearnPage.cpp
+         BreedSpecPage.cpp
+         BreedTabPage.cpp
+         BreedTypePage.cpp
+         EvoDlg.cpp
+         ItemDlg.cpp
+         SkillDlg.cpp
+         EncDlg.cpp
+         正在编译...
+         EncFishPage.cpp
+         EncLandPage.cpp
+         EncStonePage.cpp
+         EncTabPage.cpp
+         EncWaterPage.cpp
+         BerryDlg.cpp
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D NDEBUG /D _VC80_UPGRADE=0x0710 /D _UNICODE /D UNICODE /l"0x0804" /IRelease\ /nologo /fo"Release\PokemonRomViewer.res" PokemonRomViewer.rc 
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Release\PokemonRomViewer.exe" /INCREMENTAL:NO /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"Release\PokemonRomViewer.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"Release\PokemonRomViewer.lib" /MACHINE:X86 /SAFESEH /nod:kernel32.lib /nod:advapi32.lib /nod:user32.lib /nod:gdi32.lib /nod:shell32.lib /nod:comdlg32.lib /nod:version.lib /nod:mpr.lib /nod:rasapi32.lib /nod:winmm.lib /nod:winspool.lib /nod:vfw32.lib /nod:secur32.lib /nod:oleacc.lib /nod:oledlg.lib /nod:sensapi.lib
+         UnicoWS.lib
+         kernel32.lib advapi32.lib user32.lib gdi32.lib shell32.lib comdlg32.lib version.lib mpr.lib rasapi32.lib winmm.lib winspool.lib vfw32.lib secur32.lib oleacc.lib oledlg.lib sensapi.lib Release\PokemonRomViewer.res
+         Release\BaseDialog.obj
+         Release\ChildView.obj
+         Release\ConfigDlg.obj
+         Release\MainFrm.obj
+         Release\PokemonRomViewer.obj
+         Release\stdafx.obj
+         Release\StringReader.obj
+         Release\WaitDlg.obj
+         Release\BreedAblPage.obj
+         Release\BreedDeriveLearnPage.obj
+         Release\BreedDlg.obj
+         Release\BreedItemPage.obj
+         Release\BreedLvlupLearnPage.obj
+         Release\BreedMachineLearnPage.obj
+         Release\BreedSpecPage.obj
+         Release\BreedTabPage.obj
+         Release\BreedTypePage.obj
+         Release\EvoDlg.obj
+         Release\ItemDlg.obj
+         Release\SkillDlg.obj
+         Release\EncDlg.obj
+         Release\EncFishPage.obj
+         Release\EncLandPage.obj
+         Release\EncStonePage.obj
+         Release\EncTabPage.obj
+         Release\EncWaterPage.obj
+         Release\BerryDlg.obj
+         "E:\Code\CCode\.Project\GBALetsGoPE-MemHack\PokemonHack\ProcessHandler\Release\ProcessHandler.lib"
+         "E:\Code\CCode\.Project\GBALetsGoPE-MemHack\PokemonHack\VisualBoyHandler\Release\VisualBoyHandler.lib"
+         "E:\Code\CCode\.Project\GBALetsGoPE-MemHack\PokemonHack\PokemonRom\Release\PokemonRom.lib"
+     1>LINK : warning LNK4098: 默认库“MSVCRT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+         正在生成代码
+         已完成代码的生成
+     1>MSVCRT.lib(ti_inst.obj) : error LNK2005: "private: __thiscall type_info::type_info(class type_info const &)" (??0type_info@@AAE@ABV0@@Z) 已经在 libcmt.lib(typinfo.obj) 中定义
+     1>MSVCRT.lib(ti_inst.obj) : error LNK2005: "private: class type_info & __thiscall type_info::operator=(class type_info const &)" (??4type_info@@AAEAAV0@ABV0@@Z) 已经在 libcmt.lib(typinfo.obj) 中定义
+     1>MSVCRT.lib(MSVCR120.dll) : error LNK2005: _wcsncmp 已经在 libcmt.lib(wcsncmp.obj) 中定义
+     1>Release\PokemonRomViewer.exe : fatal error LNK1169: 找到一个或多个多重定义的符号
+     1>已完成生成项目“E:\Code\CCode\.Project\GBALetsGoPE-MemHack\PokemonHack\PokemonRomViewer\PokemonRomViewer.vcxproj”(Rebuild 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:04.06
